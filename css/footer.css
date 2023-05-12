@@ -17,6 +17,7 @@
     display: flex;
     color: var(--white);
     font-weight: bold;
+    text-align: center;
 }
 
 .footer-redes {
@@ -26,4 +27,27 @@
 
 .button-icon {
     text-decoration: none;
+}
+
+
+
+@media (max-width: 375px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 210px;
+        margin-top: 35px;
+        padding: 30px;
+        background-color: var(--green);
+    }
+
+    .footer-parrafo{
+        margin-top: 15px;
+    }
+
+    .footer-redes{
+        margin-top: 20px;
+    }
 }
