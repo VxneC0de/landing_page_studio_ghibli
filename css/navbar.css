@@ -58,3 +58,14 @@
         font-weight: bold;
     }
 }
+
+@media (min-width: 375px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--green);
+        height: 75px;
+        padding: 0;
+        margin-bottom: 35px;
+    }
+}
