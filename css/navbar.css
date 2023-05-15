@@ -30,6 +30,39 @@
     margin-right: 10px;
 }
 
+.header-menu:hover img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.options {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 160px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu.close {
+    display: none;
+}
+
+.menu.show {
+    display: block;
+}
+
 @media (min-width: 768px) {
     .header {
         display: flex;
