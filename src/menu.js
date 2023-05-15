@@ -1,6 +1,6 @@
 let boton = document.getElementById("options");
 let listMovil = document.getElementById("menu-movil");
-console.log(boton) 
+console.log(boton);
 
 boton.addEventListener("click", () => {
     boton.classList.toggle("close");
@@ -8,9 +8,10 @@ boton.addEventListener("click", () => {
     console.log(listMovil);
     })
 
-listMovil.addEventListener("click", e =>{
-    if (menu.id === "listMovil"){
-        listMovil.classList.remove("show");
-        boton.classList.remove("close");
-    }
-})
+listMovil.querySelectorAll("a").forEach((enlace) => {
+    enlace.addEventListener("click", () => {
+      
+    listMovil.classList.remove("show");
+    boton.classList.remove("close");
+    });
+});

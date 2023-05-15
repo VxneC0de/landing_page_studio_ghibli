@@ -39,22 +39,6 @@
     cursor: pointer;
 }
 
-.option {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.options {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 160px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: none;
-}
-
 .menu.close {
     display: none;
 }
@@ -62,6 +46,50 @@
 .menu.show {
     display: block;
 }
+
+
+
+#options {
+    position: relative;
+  }
+  
+#menu-movil {
+    position: absolute;
+    right: 0;
+    top: 74px;
+    width: 100px;
+    background-color: var(--green);
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    display: none;
+}
+  
+#menu-movil.show {
+    display: block;
+}
+  
+#menu-movil ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+#menu-movil li {
+    margin: 20px 0;
+}
+  
+#menu-movil a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+  
+#menu-movil a:hover {
+    color: var(--black);
+}
+
+
 
 @media (min-width: 768px) {
     .header {
