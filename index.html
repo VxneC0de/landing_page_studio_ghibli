@@ -2,162 +2,272 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Landing page Studio Ghibli</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./src/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+    <title>Landing Page Studio Ghibli</title>
 </head>
 <body>
+
     <header class="header">
-        <div class="header-logo">
-            <img src="img/logo-studioghibli.png" alt="Logo-Studio-Ghibli" width="80" height="80">
+
+        <div class="logo-container">
+            <img src="img/logo-studioghibli.png" alt="logo" width="80" height="80">
         </div>
-        <nav class="header-nav">
-            <ul class="nav-ul">
-                <li class="nav-ul-li">
-                    <a href="#acerca">About</a>
-                </li>
-                <li class="nav-ul-li">
-                    <a href="#images">Movies</a>
-                </li>
-                <li class="nav-ul-li">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-menu options">
-            <img src="./img/menu-burger.png" alt="menu_hamburguesa" class="icon" width="50" height="50">
-        </div>
-        <div class="menu close menu-movil">
-            <ul>
-                <li class="list-burguer">
-                    <p class="burger-inicio">Menu</p>
-                </li>
-                <li class="list-burguer">
-                    <a href="#acerca">🍀 About</a>
-                </li>
-                <li class="list-burguer">
-                    <a href="#images">🍀 Movies</a>
-                </li>
-                <li class="list-burguer">
-                    <a href="#contact">🍀 Contact</a>
-                </li>
-            </ul>
-        </div>
+
+        <div class="nav-container">
+            <nav class="navigation">
+              <a href="#about" class="active">About</a>
+              <a href="#movies">Movies</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+          
+          <div class="bx" id="menu-icon">
+            <ion-icon name="menu"></ion-icon>
+          </div>
+
     </header>
-    <div class="wrapper">
-        <main class="main-content">
-            <section class="photo-top">
-                <img src="./img/Studio-ghibli.jpg" alt="Studio-ghibli" width="800" height="500">
-            </section>
-            <section class="Welcome">
-                <div class="text-welcome">
-                    <p>Welcome</p>
-                    <img src="./img/Totoro_2ima.png" alt="image-welcome" width="80" height="80">
-                </div>
-            </section>
-            <section class="section-description" id="acerca">
-                <div class="section-title">
-                    <h1 class="title">
+
+    <section class="main-container" id="about">
+
+        <div class="about-title">
+            <h2>Welcome Everyone!</h2>
+        </div>
+
+        <div class="about">
+
+            <div class="about-foto">
+                <img src="./img/Studio-ghibli.jpg" alt="studioGhibli">
+            </div>
+
+            <div class="about-data">
+
+                <div class="boxAbout">
+
+                    <h1 class="title" id="about">
                         <span class="movie_span">Vanessa Rubio</span>
-                        <span class="movie_span">@Cxr0l</span>
+                        <a class="movie_spanA" href="https://github.com/VxneC0de">@VxneC0de</a>
                     </h1>
-                </div>
-                <div class="section-paragraph">
+
                     <p class="paragraph">
                         💙 My name is Vanessa Rubio and I am a student who is learning about the world of the web. I love learning new things from the world of technology and expanding my knowledge. I am a lover of Studio Ghibli and I have decided to make my first Landing Page about this theme to show their movies and their stories.
                     </p>
+
                 </div>
-            </section>
-            <section class="section-photos">
-                <div class="section-title-movies">
-                    <h2 class="title-movies" id="images">
-                        🎞️ All Movies 🎞️
-                    </h2>
-                </div>
-                <div class="photos-container">
-                    <div class="foto">
-                        <img src="./img/Totoro_1.png" alt="My Neighbor Totoro" width="225" height="330">
-                        <p>My Neighbor Totoro</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/Howl_2.png" alt="Howls Moving Castle" width="225" height="330">
-                        <p>Howl's Moving Castle</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/Wind_Rise_3.png" alt="The Wind Rises" width="225" height="330">
-                        <p>The Wind Rises</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/10-Cat.png" alt="The Cat Returns" width="225" height="330">
-                        <p>The Cat Returns</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/11-Sky.png" alt="Castle in the Sky" width="225" height="330">
-                        <p>Castle in the Sky</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/Kiki_4.png" alt="Kikis Delivery Service" width="225" height="330">
-                        <p>Kiki's Delivery Service</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/Heart_5.png" alt="Whisper of the Heart" width="225" height="330">
-                        <p>Whisper of the Heart</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/Ponyo_6.png" alt="Ponyo" width="225" height="330">
-                        <p>Ponyo</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/12-Poppy.png" alt="From Up on Poppy Hill" width="225" height="330">
-                        <p>From Up on Poppy Hill</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/Chihiro_7.png" alt="Spirited Away" width="225" height="330">
-                        <p>Spirited Away</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/Arrietty_8.png" alt="The Secret World of Arrietty" width="225" height="330">
-                        <p>The Secret World of Arrietty</p>
-                    </div>
-                    <div class="foto">
-                        <img src="./img/Fireflies_9.png" alt="Grave of the Fireflies" width="225" height="330">
-                        <p>Grave of the Fireflies</p>
-                    </div>
-                </div>
-            </section>
-            <section class="final-page">
-                <div class="text-finalpage">
-                    <p>Thank you for visiting my project, I hope you have enjoyed it.</p>
-                <img src="https://66.media.tumblr.com/15924a6484e81c67167bc04287917ba9/tumblr_mfoibvy2v41rfjowdo1_500.gif" alt="gif" width="160" height="80">
-                </div>
-            </section>
-        </main>
-    </div>
-    <footer class="footer">
-        <div class="footer-logo">
-            <img src="./img/logo-Cxr0l2.png" alt="Logo en Footer" width="70" height="70">
-        </div>
-        <div class="footer-parrafo">
-            <p class="autor">Made by Cxr0l. Copyright 2023 - All right reserved.</p>
-        </div>
-        <div class="footer-redes">
-            <div class="redes" id="contact">
-                <a href="https://www.github.com/Cxr0l/" class="button-icon">
-                    <img src="./icon/icon-github.png" alt="Github" width="50" height="50">
-                </a>
-                <a href="https://www.instagram.com/v_rc20/" class="button-icon">
-                    <img src="./icon/icon-instagram.png" alt="instagram" width="50" height="50">
-                </a>
-                <a href="https://www.facebook.com/VCxr0l/" class="button-icon">
-                    <img src="./icon/icon-facebook.png" alt="facebook" width="50" height="50">
-                </a>
-                <a href="https://twitter.com/Cxr0l_" class="button-icon">
-                    <img src="./icon/icon-twitter.png" alt="twitter" width="50" height="50">
-                </a>
+
             </div>
+
         </div>
+
+    </section>
+
+    <section class="landingPhotos" id="movies">
+
+        <div class="landingPhotos-titles">
+            <h2>🎞️Movies🎞️</h2>
+        </div>
+
+        <div class="containerLanding">
+
+            <div class="landing1">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">My Neighbor Totoro</span>
+                    <span class="parrafo"> Two sisters move to the country and encounter forest spirits, leading to magical adventures in their new home.</span>
+                    
+                </p>
+                
+                <div class="landingcover1">
+                    <p class="titleLanding">My Neighbor Totoro</p>
+                </div>
+            </div>
+
+            <div class="landing2">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">Howl's Moving Castle</span>
+                    <span class="parrafo">A young hatter cursed with old age seeks help from wizard Howl in his magical, moving castle.</span>
+
+                </p>
+                
+                <div class="landingcover2">
+                    <p class="titleLanding">Howl's Moving Castle</p>
+                </div>
+            </div>
+
+            <div class="landing3">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">The Wind Rises</span>
+                    <span class="parrafo">A fictionalized look at Jiro Horikoshi, designer of Japanese fighter planes during World War II.</span>
+
+                </p>
+                
+                <div class="landingcover3">
+                    <p class="titleLanding">The Wind Rises</p>
+                </div>
+            </div>
+
+            <div class="landing4">
+                <p class="dataLanding">
+                    
+                    <span class="tituloParrafo">The Cat Returns</span>
+                    <span class="parrafo">After saving a cat, a teenager finds herself engaged to a cat prince in a magical world.</span>
+
+                </p>
+                
+                <div class="landingcover4">
+                    <p class="titleLanding">The Cat Returns</p>
+                </div>
+            </div>
+
+            <div class="landing5">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">Castle in the Sky</span>
+                    <span class="parrafo">A boy and a girl race against pirates to find a legendary floating castle.</span>
+
+                </p>
+                
+                <div class="landingcover5">
+                    <p class="titleLanding">Castle in the Sky</p>
+                </div>
+            </div>
+
+            <div class="landing6">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">Kiki's Delivery Service</span>
+                    <span class="parrafo">A young witch uses her flying ability to start a courier service, facing challenges along the way.</span>
+
+                </p>
+                
+                <div class="landingcover6">
+                    <p class="titleLanding">Kiki's Delivery Service</p>
+                </div>
+            </div>
+
+            <div class="landing7">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">Whisper of the Heart</span>
+                    <span class="parrafo">A love story about a girl who loves reading and a boy who checks out the same books.</span>
+
+                </p>
+                
+                <div class="landingcover7">
+                    <p class="titleLanding">Whisper of the Heart</p>
+                </div>
+            </div>
+
+            <div class="landing8">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">Ponyo</span>
+                    <span class="parrafo">A young goldfish princess, Ponyo, longs to become human after falling in love with a five-year-old boy.</span>
+
+                </p>
+                
+                <div class="landingcover8">
+                    <p class="titleLanding">Ponyo</p>
+                </div>
+            </div>
+
+            <div class="landing9">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">From Up on Poppy Hill</span>
+                    <span class="parrafo">High school students Umi and Shun join forces to save their school's clubhouse.</span>
+
+                </p>
+                
+                <div class="landingcover9">
+                    <p class="titleLanding">From Up on Poppy Hill</p>
+                </div>
+            </div>
+
+            <div class="landing10">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">Spirited Away</span>
+                    <span class="parrafo">A ten-year-old girl wanders into a world ruled by gods, witches, and spirits.</span>
+
+                </p>
+                
+                <div class="landingcover10">
+                    <p class="titleLanding">Spirited Away</p>
+                </div>
+            </div>
+
+            <div class="landing11">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">The Secret World of Arrietty</span>
+                    <span class="parrafo">The Clock family, tiny people living in a human family's residence, face changes when daughter Arrietty is discovered.</span>
+
+                </p>
+                
+                <div class="landingcover11">
+                    <p class="titleLanding">The Secret World of Arrietty</p>
+                </div>
+            </div>
+
+            <div class="landing12">
+                <p class="dataLanding">
+
+                    <span class="tituloParrafo">Grave of the Fireflies</span>
+                    <span class="parrafo">Siblings Seita and Setsuko struggle for survival in Japan during World War II.</span>
+
+                </p>
+                
+                <div class="landingcover12">
+                    <p class="titleLanding">Grave of the Fireflies</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-finalpage">
+
+            <p>Thank you for visiting my project, I hope you have enjoyed it.</p>
+            
+            <img src="https://66.media.tumblr.com/15924a6484e81c67167bc04287917ba9/tumblr_mfoibvy2v41rfjowdo1_500.gif" alt="gif" width="160" height="80">
+
+        </div>
+
+    </section>
+
+    <footer class="footer" id="contact">
+
+        <div class="footer-box">
+  
+          <div class="footer-text">
+            <p>Copyright &copy; 2023 by VxneC0de | All Rights Reserved.</p>
+          </div>
+
+          <div class="iconos-contact">
+            <a href="https://github.com/VxneC0de"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.instagram.com/v_rc20/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.facebook.com/VCxr0l/"><ion-icon name="logo-facebook"></ion-icon></a>
+          </div>
+    
+          <div class="footer-iconTop">
+            <a href="#about"><ion-icon name="arrow-up-outline"></ion-icon></a>
+          </div>
+          
+        </div>
+  
     </footer>
-    <script src="./src/menu.js"></script>
+
+
+
+    <script src="./src/index.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </body>
 </html>

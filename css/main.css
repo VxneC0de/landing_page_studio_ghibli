@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+section{
+    min-height: 100vh;
+}
+
+.none {
+    display: none !important;
+}
+
+@media screen and (max-width: 850px){
+    section{
+        min-height: 0;
+        height: 100%;
+    }
+}
